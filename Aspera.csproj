@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>true</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <StartupObject>Aspera.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Genbox.VelcroPhysics" Version="0.1.0-alpha.2" />
+    <PackageReference Include="SFML.Net" Version="2.5.0" />
+    <PackageReference Include="tiledcs" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+     <Content Include="shaders\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="assets\world\Mossy - TileSet.png" />
+    <None Remove="shaders\add.frag" />
+    <None Remove="shaders\basic.vert" />
+    <None Remove="shaders\blur.frag" />
+    <None Remove="shaders\player.frag" />
+    <None Remove="shaders\post.frag" />
+    <None Remove="shaders\threshold.frag" />
+    <None Remove="shaders\waves.vert" />
+    <None Remove="shaders\world.frag" />
+    <None Remove="shaders\world.vert" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\overlays\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ImGui.NET">
+      <HintPath>..\..\Documents\ImGui.NET-master\bin\Debug\ImGui.NET\net6.0\ImGui.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="assets\background\main\%280%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%281%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%2810%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%2811%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%282%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%283%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%284%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%285%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%286%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%287%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%288%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="assets\background\main\%289%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>    
+</Project>
